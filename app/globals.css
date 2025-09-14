@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

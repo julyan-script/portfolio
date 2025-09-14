@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.mouseWheelZoom": true,
+  "editor.find.addExtraSpaceOnTop": false,
+  "diffEditor.codeLens": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.minimap.autohide": true,
+  "files.trimTrailingWhitespaceInRegexAndStrings": false,
+  "workbench.experimental.cloudChanges.partialMatches.enabled": true,
+  "workbench.secondarySideBar.showLabels": false
+}
