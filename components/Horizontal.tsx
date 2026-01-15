@@ -39,7 +39,7 @@ const HorizontalScrollCarousel = () => {
                 <h2 className="text-8xl font-thunder">01</h2>
                 <Link href={"https://github.com/julyan-script/NextJS-inventory-management-app.git"} className="w-[400px] shadow-lg  h-60 md:h-50 text-black rounded-xl">
                           <div className="relative rounded-xl w-full overflow-hidden h-60 md:h-60">
-                             <Image className="border-2 border-white object-cover rounded-xl hover:scale-[110%] duration-800 ease-in-out transform transition-all" src={'/inventory-app.png'} fill alt=""/>
+                             <Image className="border-2 border-white object-cover rounded-xl hover:scale-[110%] duration-800 ease-in-out transform transition-all" src={'/inventory-app.png'} sizes="(max-width: 768px) 100vw, 400px" fill alt="inventory"/>
                           </div>
     
                         </Link>
@@ -49,7 +49,7 @@ const HorizontalScrollCarousel = () => {
                  <h2 className="text-8xl font-thunder">02</h2>
                <Link href={""} className="w-[400px] shadow-lg  h-60 md:h-50 text-black rounded-xl">
                           <div className="relative rounded-xl w-full overflow-hidden h-60 md:h-60">
-                             <Image className="border-2 border-white object-cover rounded-xl hover:scale-[110%] duration-800 ease-in-out transform transition-all" src={'/hotel-app.png'} fill alt=""/>
+                             <Image className="border-2 border-white object-cover rounded-xl hover:scale-[110%] duration-800 ease-in-out transform transition-all" src={'/hotel-app.png'} sizes="(max-width: 768px) 100vw, 400px" fill alt="hotel"/>
                           </div>
     
                         </Link>
@@ -59,7 +59,7 @@ const HorizontalScrollCarousel = () => {
                  <h2 className="text-8xl font-thunder">03</h2>
                 <Link href={"https://github.com/julyan-script/cashier-app.git"} className="w-[400px] shadow-lg  h-60 md:h-50 text-black rounded-xl">
                           <div className="relative rounded-xl w-full overflow-hidden h-60 md:h-60">
-                             <Image className="object-cover border-2 border-white rounded-xl hover:scale-[110%] duration-300 ease-in-out transform transition-all" src={'/cashier-app.png'} fill alt=""/>
+                             <Image className="object-cover border-2 border-white rounded-xl hover:scale-[110%] duration-300 ease-in-out transform transition-all" src={'/cashier-app.png'}  sizes="(max-width: 768px) 100vw, 400px" fill alt="cashier"/>
                           </div>
                          
                         </Link>
@@ -69,7 +69,7 @@ const HorizontalScrollCarousel = () => {
                  <h2 className="text-8xl font-thunder">04</h2>
                <div className="w-[400px] shadow-lg  h-60 md:h-50 text-black rounded-xl">
                           <div className="relative rounded-xl w-full overflow-hidden h-60 md:h-60">
-                             <Image className="border-2 border-white object-cover rounded-xl hover:scale-[110%] duration-800 ease-in-out transform transition-all" src={'/figma.png'} fill alt=""/>
+                             <Image className="border-2 border-white object-cover rounded-xl hover:scale-[110%] duration-800 ease-in-out transform transition-all" src={'/figma.png'} sizes="(max-width: 768px) 100vw, 400px" fill alt="figma"/>
                           </div>
                           
                         </div>

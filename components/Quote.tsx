@@ -98,6 +98,7 @@ const Page2 = ({ scrollYProgress }: Page1Props) => {
               fill
               src={"/julyan.jpg"}
               alt="my photo"
+              sizes="(max-width: 768px) 100vw, 400px"
             />
           </div>
         </div>

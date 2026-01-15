@@ -119,7 +119,7 @@ const Phrase = ({ text, src }: Props) => {
         <p className="text-xs md:text-base lg:text-[6.5vw]">{text}</p>
       </div>
       <div className="relative aspect-[4/2] h-[3vw] md:h-[4vw] lg:h-[6.5vw] rounded-full">
-        <Image className=" object-cover rounded-full" src={src} fill alt="me" />
+        <Image className=" object-cover rounded-full" src={src} fill alt="me" sizes="(max-width: 768px) 100vw, 400px" />
       </div>
     </div>
   );

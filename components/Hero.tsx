@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         <div className="relative w-80 h-60 md:w-55 md:h-65">
-          <Image className="object-cover" src="/julyan.jpg" alt="me" fill />
+          <Image className="object-cover" src="/julyan.jpg" alt="me" sizes="(max-width: 768px) 100vw, 400px" fill/>
         </div>
 
         <div className="flex items-center justify-center md:flex mt-10 md:mt-40 flex-col md:justify-start md:items-start text-xs md:text-sm helvetica uppercase text-black/60 gap-2">
