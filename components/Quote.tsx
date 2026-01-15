@@ -27,14 +27,31 @@ interface Page1Props {
 
 const Page1 = ({ scrollYProgress }: Page1Props) => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
+  
+
+  const container2 = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress: sectionScrollY } = useScroll({
+    target: container2,
+    offset: ["start start", "end start"],
+  });
+
+  const backgroundColor = useTransform(
+    sectionScrollY,
+    [0, 1],
+    ["#1c1917", "#000000"] // stone-900 → black
+  );
 
   return (
     <motion.div
-      style={{ scale, rotate }}
+      style={{ scale }}
       className="sticky top-0 h-screen z-10 overflow-x-clip"
     >
-      <div className="h-full relative bg-stone-900  ">
+      <motion.div
+        ref={container2}
+        style={{ backgroundColor }}
+        className="h-full relative "
+      >
         <p className="absolute inset-0 -top-45 w-full text-[460px] -tracking-wider -translate-x-25 text-black/30 uppercase text-center font-extrabold helvetica">
           quote
         </p>
@@ -43,20 +60,20 @@ const Page1 = ({ scrollYProgress }: Page1Props) => {
           small idea holds the power to change the world. This is not just a
           portfolio—it’s a journey.
         </h2>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
 
 const Page2 = ({ scrollYProgress }: Page1Props) => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
+  
 
   return (
     <motion.div
       id="section-1"
-      style={{ scale, rotate }}
-      className="h-screen bg-white z-20 relative pt-15"
+      style={{ scale}}
+      className="h-screen hidden md:block bg-white z-20 relative pt-0 md:pt-15"
     >
       <h2 className="absolute helvetica w-full uppercase pl-5 border-y-1 border-black text-4xl text-stone-950">
         who i am ?
@@ -84,7 +101,7 @@ const Page2 = ({ scrollYProgress }: Page1Props) => {
             />
           </div>
         </div>
-        <div className="w-full md:w-[65%] h-auto md:h-full flex flex-col justify-center items-center md:justify-start md:items-start gap-5 ">
+        <div className="w-full md:w-[65%] h-auto md:h-full flex flex-col justify-center items-center md:justify-start md:items-start gap-5 py-10 ">
           <div className="text-stone-900 text-5xl  pt-23 font-bold font-serif pr-30">
             <h2>Before you know my work, know the person behind it.</h2>
           </div>

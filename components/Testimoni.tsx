@@ -12,22 +12,30 @@ const Testimoni = () => {
   });
 
   return (
-    <div className="min-h-screen w-full bg-white py-20">
-      <div className="flex justify-center items-center gap-5">
-        <div className="w-full h-0.5 bg-black"></div>
-        <h2 className="uppercase font-bold helvetica text-black">
+    <div id="testimonials" className="min-h-screen w-full bg-white py-10 md:py-20">
+      <div className="flex justify-center items-center gap-3 md:gap-5 flex-wrap">
+        <div className="w-full h-0.5 bg-black hidden md:block"></div>
+        <h2 className="uppercase font-bold helvetica text-black text-sm md:text-base">
           testimonials
         </h2>
-        <div className="w-full h-0.5 bg-black"></div>
+        <div className="w-full h-0.5 bg-black hidden md:block"></div>
       </div>
-      <div className="min-h-screen px-10 py-15">
+      <div className="min-h-screen px-3 md:px-10 py-8 md:py-15">
         <div
           ref={container}
-          className="w-full bg-stone-200 min-h-screen rounded-2xl px-4 flex justify-center gap-10 py-10 items-center"
+          className="w-full bg-stone-200 min-h-screen rounded-2xl px-2 md:px-4 flex flex-col md:flex-row justify-center gap-5 md:gap-10 py-5 md:py-10 items-center overflow-hidden"
         >
-          <ColCard />
+          <div className="hidden md:block">
+            <ColCard />
+          </div>
           <ColCard1 scrollYProgress={scrollYProgress} />
-          <ColCard2 />
+          <div className="hidden md:block">
+            <ColCard2 />
+          </div>
+          <div className="md:hidden w-full gap-5">
+            <ColCard />
+            <ColCard2 />
+          </div>
         </div>
       </div>
     </div>
@@ -133,23 +141,23 @@ const Card = ({ comment, name, status }: CardsProps) => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="w-80 bg-white text-black h-max py-5 rounded-2xl px-5 "
+        className="w-full md:w-80 bg-white text-black h-max py-3 md:py-5 rounded-2xl px-3 md:px-5 "
       >
-        <div className="flex justify-start items-start">
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStar />
+        <div className="flex justify-start items-start gap-1 md:gap-0">
+          <FaStar size={14} className="md:w-4 md:h-4" />
+          <FaStar size={14} className="md:w-4 md:h-4" />
+          <FaStar size={14} className="md:w-4 md:h-4" />
+          <FaStar size={14} className="md:w-4 md:h-4" />
+          <FaStar size={14} className="md:w-4 md:h-4" />
         </div>
-        <div className="py-5">
-          <p>{comment}</p>
+        <div className="py-3 md:py-5">
+          <p className="text-xs md:text-base">{comment}</p>
         </div>
-        <div className="flex flex-col">
-          <p className="tracking-widest font-bold uppercase helvetica">
+        <div className="flex flex-col gap-1">
+          <p className="tracking-widest font-bold uppercase helvetica text-xs md:text-base">
             {name}
           </p>
-          <p className="text-black/50">{status}</p>
+          <p className="text-black/50 text-xs md:text-sm">{status}</p>
         </div>
       </motion.div>
     </div>

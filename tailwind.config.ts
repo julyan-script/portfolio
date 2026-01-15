@@ -9,6 +9,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         rye: ['var(--font-rye)'],
+        thunder: ['var(--font-thunder)', 'sans-serif'],
       },
     },
   },

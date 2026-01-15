@@ -4,18 +4,18 @@ import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
 import Horizontal from "@/components/Horizontal";
 import Expertise from "@/components/Expertise";
-import Services from "@/components/Services";
 import Testimoni from "@/components/Testimoni";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       <Hero />
       <Quote />
       <Horizontal />
-      <Expertise />
-      <Services />
-      <Testimoni/>
+      <Expertise />  
+      <Testimoni />
+      <Footer />
     </div>
   );
 }

@@ -6,7 +6,7 @@
   "editor.find.addExtraSpaceOnTop": false,
   "diffEditor.codeLens": false,
   "diffEditor.renderSideBySide": false,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "files.trimTrailingWhitespaceInRegexAndStrings": false,
   "workbench.experimental.cloudChanges.partialMatches.enabled": true,
   "workbench.secondarySideBar.showLabels": false

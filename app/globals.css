@@ -12,3 +12,25 @@ html {
 .helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+@font-face {
+  font-family: 'Thunder';
+  src: local('Thunder BlackHC'), url('/fonts/Thunder-BlackHC.ttf') format('truetype');
+  font-weight: 900;
+  
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: local('Thunder BoldHC'), url('/fonts/Thunder-BoldHC.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Test class untuk debug */
+.font-thunder {
+  font-family: 'Thunder', sans-serif !important;
+}
+
+
